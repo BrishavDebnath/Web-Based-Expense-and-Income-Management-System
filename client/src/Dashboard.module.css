@@ -1,0 +1,57 @@
+/* src/Dashboard.module.css */
+
+.dashboardContainer {
+    padding: 1rem 0; /* Add some vertical padding */
+  }
+  
+  .welcomeMessage {
+    margin-bottom: 1.5rem; /* space-y-6 equivalent */
+    font-size: 1.125rem; /* text-lg */
+    color: #4a5568; /* text-gray-700 */
+  }
+  
+  .section {
+    background-color: white;
+    padding: 1.5rem; /* p-6 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-md */
+    margin-bottom: 1.5rem; /* Add space between sections */
+  }
+  
+  .sectionTitle {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 500; /* font-medium */
+    margin-bottom: 0.75rem; /* mb-3 */
+    color: #374151; /* text-gray-700 */
+  }
+  
+  .summaryChartGrid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* Mobile: 1 column */
+    gap: 1.5rem; /* gap-6 */
+  }
+  
+  /* Medium screens and up: 2 columns */
+  @media (min-width: 768px) {
+    .summaryChartGrid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  .summaryDetails p {
+      margin: 0.25rem 0; /* space-y-1 */
+      color: #4b5563; /* text-gray-600 */
+  }
+  
+  .summaryDetails strong {
+      color: #1f2937; /* text-gray-800 */
+  }
+  
+  /* Add styles for other elements like forms, tables as needed */
+  .transactionSection hr {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-color: #e5e7eb; /* border-gray-200 */
+  }
+  
+  
